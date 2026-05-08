@@ -442,6 +442,12 @@
         <summary>What file types can I import?</summary>
         <div class="faq-body">
           RecallPrompt supports Anki package imports (<code>.apkg</code> and <code>.colpkg</code>), tabular imports (CSV/TSV), and Excel spreadsheets (<code>.xlsx</code>).
+          <br><br>
+          For CSV, TSV, and <code>.xlsx</code> files, the importer expects:
+          <ul style="margin-top:8px; padding-left:18px; display:grid; gap:5px;">
+            <li><strong>Required:</strong> <code>Front</code> and <code>Back</code> columns.</li>
+            <li><strong>Optional:</strong> <code>Source</code> column — used when present.</li>
+          </ul>
         </div>
       </details>
 
@@ -470,6 +476,48 @@
         <summary>How do I back up my data?</summary>
         <div class="faq-body">
           Use your normal device backup workflow — iCloud or an encrypted Finder backup — to preserve app data.
+        </div>
+      </details>
+
+      <details>
+        <summary>Why am I not receiving reminder notifications?</summary>
+        <div class="faq-body">
+          Check that notifications are allowed in <strong>iOS Settings → Notifications → RecallPrompt</strong>, that reminders are enabled inside RecallPrompt, and that Focus / Do Not Disturb isn't suppressing alerts.
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I change reminder timing?</summary>
+        <div class="faq-body">
+          Open RecallPrompt settings and adjust active hours, quiet days, and deck priority. These controls affect when and how often prompts are scheduled.
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I replace an imported deck with a newer version?</summary>
+        <div class="faq-body">
+          Yes. If RecallPrompt detects an existing deck copy, you can choose to replace it during import.
+        </div>
+      </details>
+
+      <details>
+        <summary>What does "no usable rows" mean during CSV/XLSX import?</summary>
+        <div class="faq-body">
+          It usually means RecallPrompt couldn't find rows with valid <code>Front</code> and <code>Back</code> values. Verify your column names and that rows are not blank.
+        </div>
+      </details>
+
+      <details>
+        <summary>Where is my imported data stored?</summary>
+        <div class="faq-body">
+          Imported decks are stored locally on your device as companion copies used by RecallPrompt.
+        </div>
+      </details>
+
+      <details>
+        <summary>Is RecallPrompt affiliated with Anki or AnkiWeb?</summary>
+        <div class="faq-body">
+          No. RecallPrompt is an independent app and is not affiliated with or endorsed by Anki or AnkiWeb.
         </div>
       </details>
 
